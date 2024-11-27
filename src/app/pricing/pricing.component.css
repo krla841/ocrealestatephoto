@@ -1,0 +1,66 @@
+/* General container style */
+.services-container {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: #4c413f; /* Soft dark brown-gray color */
+    /* background-color: #f5f2ef; Light beige background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  /* Main heading */
+  h1 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for headings */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4c413f;
+  }
+  
+  /* Section headings */
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #4c413f;
+  }
+  
+  /* List items and body text */
+  p, li {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #4c413f;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Price list */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Add space between sections */
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Additional styling for responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p, li {
+      font-size: 0.9rem;
+    }
+  }
+  

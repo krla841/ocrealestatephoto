@@ -1,0 +1,72 @@
+.top-container {
+  display: flex;
+}
+
+
+.custom-card-image img {
+    height: 1000px;
+    width: 100%;
+    object-fit: cover; /* Ensures the image is cropped to fit the dimensions */
+  }
+
+  .container {
+    /* border: solid; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+
+  img {
+    /* object-fit: cover; Ensures the image covers the screen without distortion */
+      width: 600px;
+      height: 400px;
+  }
+
+
+  .button-centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 120px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Makes the background transparent */
+    border: none; /* Removes the border */
+    color: inherit; /* Ensures text color inherits from the parent */
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    outline: none; /* Removes the focus outline */
+    border: solid;
+    border-color: white;
+    color: white;
+}
+
+.button-centered:hover {
+    opacity: 0.7; /* Optional: Adds a hover effect */
+    background-color: brown;
+  }
+
+.section-title {
+    position: absolute;
+    top: 15%;
+    margin-left: 35%;
+    font-size: 40px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint for smaller screens */
+  .top-container {
+    flex-direction: column; /* Switch to a single column layout */
+  }
+  img {
+    object-fit: cover; 
+  }
+  .section-title {
+    position: absolute;
+    top: 15%;
+    margin-left: 28%;
+    font-size: 40px;
+}
+}
+

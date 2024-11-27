@@ -1,0 +1,84 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<router-outlet></router-outlet>
+
+<div *ngIf="isVisible" class="top-container">
+
+    <div class="row">
+        <div class="col s12 m7 l12">
+          <div class="card">
+            <div id="exterior" class="card-image custom-card-image">
+              <img src="../../assets/exterior.jpg">
+              <a (click)="hide($event, 'exterior')" class="waves-effect waves-light btn button-centered">View</a>
+              <span class="card-title section-title">Exteriors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m7 l12">
+          <div class="card">
+            <div id="interior" class="card-image custom-card-image">
+              <img src="../../assets/pretty.avif">
+              <span class="card-title section-title">Interiors</span>
+              <a (click)="hide($event, 'interior')" class="waves-effect waves-light btn button-centered">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m7 l12">
+          <div class="card">
+            <div id="drone" class="card-image custom-card-image">
+              <img src="../../assets/areal.jpg">
+              <span class="card-title section-title">Aereal</span>
+              <a (click)="hide($event, 'drone')" class="waves-effect waves-light btn button-centered">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div *ngIf="isExterior">
+  <div class="container">
+    <img src="../../assets/exterior.jpg">
+    <img src="../../assets/Exterior1.jpg">
+    <img src="../../assets/Exterior2.jpg">
+    <img src="../../assets/Exterior3.jpg">
+    <img src="../../assets/Exterior4.jpg">
+    <img src="../../assets/IMG_17.jpg">
+    <img src="../../assets/IMG_16.jpg">
+    <img src="../../assets/IMG_PATIO_4.jpg">
+  </div>
+</div>
+
+<div *ngIf="isInterior">
+  <div class="container">
+    <img src="../../assets/cozy.jpeg">
+    <img src="../../assets/Interior/IMG_2291.JPG">
+    <img src="../../assets/Interior/IMG_2292.JPG">
+    <img src="../../assets/Interior/IMG_2293.JPG">
+    <img src="../../assets/Interior/IMG_2294.JPG">
+    <img src="../../assets/Interior/IMG_2298.JPG">
+    <img src="../../assets/Interior/IMG_2299.JPG">
+    <img src="../../assets/Interior/IMG_2300.JPG">
+    <img src="../../assets/Interior/IMG_2301.JPG">
+    <img src="../../assets/Interior/living_room2-1.jpg">
+    <img src="../../assets/Interior/living_room2-2.jpg">
+    <img src="../../assets/Interior/living_room2-3.jpg">
+    <img src="../../assets/Interior/living_room2-4.jpg">
+    <img src="../../assets/Interior/living_room2-5.jpg">
+  </div>
+</div>
+
+<div *ngIf="isDrone">
+  <div class="container">
+    <img src="../../assets/areal.jpg">
+  </div>
+</div>
+
+
+
+

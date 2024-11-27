@@ -25,9 +25,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles.css",
+              "node_modules/materialize-css/dist/css/materialize.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -84,12 +88,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9cec9b29-27ce-41e9-aa72-f072c1c325cc"
   }
 }
