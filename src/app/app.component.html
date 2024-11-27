@@ -1,16 +1,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav>
-  <!-- 1.4em cinzel, serif -->
-  <div class="white nav-wrapper">
-    <a style="color: black; margin-left: 3%;" class="brand-logo name-title" (click)="navigateToPortfolio()">Karla Sosa</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down black-text">
+  <div class="nav-wrapper white">
+    <a href="#" style="color: black; margin-left: 3%;" class="brand-logo name-title" (click)="navigateToPortfolio()">Karla Sosa</a>
+    <!-- Collapsible menu button -->
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a class="black-text" routerLink="/home">Home</a></li>
-      <li><a class="black-text" routerLink="/portfolio" routerLinkActive="active">Portfolio</a> </li>
-      <li><a class="black-text" routerLink="/pricing" routerLinkActive="active">Pricing</a> </li>
-      <li><a class="black-text" routerLink="/about" routerLinkActive="active">About</a> </li>
+      <li><a class="black-text" routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+      <li><a class="black-text" routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
+      <li><a class="black-text" routerLink="/about" routerLinkActive="active">About</a></li>
     </ul>
   </div>
 </nav>
+
+<!-- Mobile navigation -->
+<ul class="sidenav" id="mobile-demo">
+  <li><a class="black-text" routerLink="/home">Home</a></li>
+  <li><a class="black-text" routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+  <li><a class="black-text" routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
+  <li><a class="black-text" routerLink="/about" routerLinkActive="active">About</a></li>
+</ul>
+
 <router-outlet></router-outlet>
-
-
